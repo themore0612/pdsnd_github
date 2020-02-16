@@ -164,14 +164,6 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def raw_data(df):
-    while True:
-        raw_data=input('would you like to explore raw data? Enter yes or no.\n')
-        if raw_data.lower() == 'yes':
-            raw_data = df.iloc[:5]
-        else:
-            break
-
 def main():
     while True:
         city, month, day = get_filters()
