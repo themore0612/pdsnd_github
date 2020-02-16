@@ -143,6 +143,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+<<<<<<< HEAD
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -164,6 +165,46 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+||||||| merged common ancestors
+
+def user_stats(df):
+    """Displays statistics on bikeshare users."""
+
+    print('\nCalculating User Stats...\n')
+    start_time = time.time()
+
+    # TO DO: Display counts of user types
+    user_type_count = df['User Type'].value_counts()
+
+    # TO DO: Display counts of gender
+    user_gender_count = df['Gender'].value_counts()
+
+    # TO DO: Display earliest, most recent, and most common year of birth
+    earliest_year_of_birth = df['Birth Year'].min()
+    most_recent_year_of_birth = df['Birth Year'].max()
+    most_common_year_of_birth = df['Birth Year'].value_counts().idxmax()
+
+    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('-'*40)
+
+def raw_data(df):
+    while True:
+        raw_data=input('would you like to explore raw data? Enter yes or no.\n')
+        if raw_data.lower() == 'yes':
+            raw_data = df.iloc[:5]
+        else:
+            break
+
+=======
+def raw_data(df):
+    while True:
+        raw_data=input('would you like to explore raw data? Enter yes or no.\n')
+        if raw_data.lower() == 'yes':
+            raw_data = df.iloc[:5]
+        else:
+            break
+
+>>>>>>> refactoring
 def main():
     while True:
         city, month, day = get_filters()
