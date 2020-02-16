@@ -1,3 +1,4 @@
+
 ### Date created
 Include the date you created this project and README file.
 
@@ -14,3 +15,4 @@ Include the files used
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
 I am updating the readme.md file
+I am putting in more details in the readme file so that it would fulfill my task for "Additional changes to documentation"
